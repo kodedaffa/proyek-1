@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* bagian navbar */
+.navbar {
+    background-color: #ebf2fa;
+    height: 100%;
+}
+
+.navbar-brand, img{
+    width: 80px;
+    height: 80px;
+    margin: 0 15px 0 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#navbarNav {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding-left: 25px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbarNav .navbar-nav .nav-link {
+    color: #465362;
+    font-weight: 500;
+    transition: 0.25s ease-in-out;
+}
+
+#navbarNav .navbar-nav .nav-link:hover {
+    color: #143601;
+}
+
+.nav-btn {
+    border: #82a3a1 solid;
+    border-radius: 20px;
+    margin-right: 65px;
+    padding: 4px 15px;
+    transition: 0.25s ease-in-out;
+}
+
+.nav-btn:hover {
+    border: #001936 solid;
+    background-color: #001936;
+    color: #ebf2fa;
+}
+
+/* bagian hero */
+.jumbotron{
+    background-color: #001936;
+    height: 100vh;
+}
+
+.circle-1 {
+    background-color: #82a3a1;
+    width: 630px;
+    height: 630px;
+    position: absolute;
+    top: 300px;
+    left: 640px;
+    border-radius: 100%;
+}
+
+.circle-2 {
+    background-color: #82a3a1;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 500px;
+    left: 1000px;
+    border-radius: 100%;
+}
+
+.cover {
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+    position: absolute;
+    top: 150px;
+    left: 750px;
+}
+
+.title-hero{
+    color: #ebf2fa;
+    font-size: 30px;
+    width: 14em;
+    position: relative;
+    bottom: 800px;
+    left: 100px;
+}
+
+p {
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.btn {
+    padding-top: 400px;
+}
