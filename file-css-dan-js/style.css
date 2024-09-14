@@ -89,14 +89,16 @@
 }
 
 .title-hero{
-    font-size: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0px 4px 4px #00000040;
-    -webkit-text-stroke: 5px #dce1de;
+}
+
+.title {
+    font-size: 120px;
+    -webkit-text-stroke: 3px #dce1de;
+    font-weight: 600;
     color: transparent;
-    font-weight: bold;
 }
 
 p {
