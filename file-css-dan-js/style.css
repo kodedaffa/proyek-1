@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* bagian navbar */
+/* bagian navbar dan hero */
 .navbar-hero{
     background-image: url("/image/background.jpg");
     background-size: cover;
@@ -81,7 +81,6 @@
     color: #dce1de;
 }
 
-/* bagian hero */
 .jumbotron{
     width: 100%;
     height: 84.9vh;
@@ -163,4 +162,90 @@
 #btn-two:hover {
     background-color: #1f2421;
     color: #9cc5a1;
+}
+
+/* bagian about us */
+.about-us {
+    width: 100%;
+    height: 37.5em;
+    background-color: #1f2421;
+}
+
+.title-about {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#sentence-title {
+    margin-left: 6em;
+    padding-bottom: 1.4em;
+    color: #dce1de;
+    font-family: "Cormorant Garamond-Bold", serif;
+    position: relative;
+    top: 5em;
+    font-size: 1.875em;
+    width: 4.2em;
+    height: 1.2em;
+    text-align: center;
+    border-bottom: 5px solid #dce1de;
+}
+
+.text-about {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#sentence-text {
+    margin-left: 8em;
+    color: #dce1de;
+    font-family: "Cormorant Garamond-Regular", serif;
+    position: relative;
+    top: 10em;
+    font-size: 1.2em;
+    width: 20em;
+    height: 7.5em;
+    text-align: start;
+}
+
+.image-about {
+    width: 15.8em;
+    height: 21.3em;
+    background: #49a078;
+    position: relative;
+    left: 56em;
+    bottom: 5em;
+}
+
+.image-about img {
+    width: 15.8em;
+    height: 21.3em;
+    position: relative;
+    right: 3em;
+    top: 2em;
+}
+
+.rectangle-one {
+    width: 700px;
+    height: 700px;
+    top: 0;
+    left: 0;
+    background-color: #2168694c;
+    position: relative;
+    left: 649px;
+    top: -556px;
+    clip-path: polygon(62.38% 0%, 73.63% 0%, 100% 27.25%, 100% 38.88%);
+}
+
+.rectangle-two {
+    width: 700px;
+    height: 700px;
+    top: 0;
+    left: 0;
+    background-color: #2168694c;
+    position: relative;
+    left: 500px;
+    top: -1255px;
+    clip-path: polygon(53.38% 0%, 66.25% 0%, 100% 32.25%, 100% 44.88%);
 }
