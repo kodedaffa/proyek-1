@@ -97,7 +97,7 @@
     top: 0.8em;
     font-family: "Cormorant Garamond-Bold", serif;
     font-size: 90px;
-    -webkit-text-stroke: 2px #dce1de;
+    -webkit-text-stroke: 2px #1f2421;
     text-shadow: 0px 4px 4px #00000040;
     text-align: center;
     font-weight: 700;
@@ -166,6 +166,7 @@
 
 /* bagian about us */
 .about-us {
+    position: relative;
     width: 100%;
     height: 37.5em;
     background-color: #1f2421;
@@ -177,7 +178,7 @@
     align-items: center;
 }
 
-#sentence-title {
+#sentence-title-about {
     margin-left: 6em;
     padding-bottom: 1.4em;
     color: #dce1de;
@@ -197,7 +198,7 @@
     align-items: center;
 }
 
-#sentence-text {
+#sentence-text-about {
     margin-left: 8em;
     color: #dce1de;
     font-family: "Cormorant Garamond-Regular", serif;
@@ -216,6 +217,7 @@
     position: relative;
     left: 56em;
     bottom: 5em;
+    z-index: 1;
 }
 
 .image-about img {
@@ -245,7 +247,13 @@
     left: 0;
     background-color: #2168694c;
     position: relative;
-    left: 500px;
+    left: 649px;
     top: -1255px;
-    clip-path: polygon(53.38% 0%, 66.25% 0%, 100% 32.25%, 100% 44.88%);
+    clip-path: polygon(56.29% 0%, 100% 44.29%, 100% 57%, 43% 0%);
+}
+
+.services {
+    background-color: red;
+    width: 100%;
+    height: 15.9vh;
 }
