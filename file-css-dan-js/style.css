@@ -252,8 +252,26 @@
     clip-path: polygon(56.29% 0%, 100% 44.29%, 100% 57%, 43% 0%);
 }
 
+/* bagian services */
 .services {
+
     background-color: red;
     width: 100%;
-    height: 15.9vh;
+    height: 100%;
+}
+
+.container {
+    padding: 50px;
+}
+
+.title-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sentence-title-service {
+    font-family: "Cormorant Garamond-Bold", serif;
+    color: #216869;
+    text-align: center;
 }
