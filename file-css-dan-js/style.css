@@ -254,8 +254,7 @@
 
 /* bagian services */
 .services {
-
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     height: 100%;
 }
@@ -274,4 +273,41 @@
     font-family: "Cormorant Garamond-Bold", serif;
     color: #216869;
     text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+}
+
+.text-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sentence-text-service {
+    font-family: "Cormorant Garamond-Regular", serif;
+    color: #216869;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    font-size: 18px;
+    position: relative;
+    top: 1.4em;
+}
+
+.row {
+    position: relative;
+    top: 2em;
+}
+
+.col {
+    background-color: yellow;
+    margin: 0 15px 0 15px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+iconify-icon {
+    font-size: 4.5em;
 }
