@@ -310,4 +310,21 @@
 
 iconify-icon {
     font-size: 4.5em;
+    color: #49a078;
+}
+
+#service{
+    font-family: "Cormorant Garamond-SemiBold", serif;
+    font-size: 1.55em;
+    text-align: center;
+    position: relative;
+    top: 1em;
+}
+
+#paragraph{
+    font-family: "Cormorant Garamond-Regular", serif;
+    font-size: 0.8em;
+    text-align: center;
+    position: relative;
+    top: 1.2em;
 }
