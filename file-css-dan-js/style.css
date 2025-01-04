@@ -391,18 +391,40 @@ iconify-icon {
     top: 0.6em;
 }
 
-#projects .container .card {
+#projects .container .carousel-wrapper {
     position: relative;
-    bottom: 3.8rem;
-    margin: 12px;
+    top: 0.6rem;
+    right: 7.25125rem;
+    width: 120.8%;
+    overflow: hidden;
+}
+
+#projects .container .carousel-wrapper .carousel {
+    border: 3px solid red;
+    display: inline-block;
+    justify-content: flex-start;
+    width: 100%;
+    column-count: 6;
+    margin: 0;
+    padding-right: 83.7rem;
+    scrollbar-width: none;
+    white-space: nowrap;
+    animation: scroll 25s infinite linear;
+}
+
+#projects .container .carousel .card {
+    margin: 0 15px 0 15px;
+    position: relative;
     padding: 20px;
     width: 16rem;
     height: 22rem;
     background-color: #1f2421;
     border-radius: 20px;
+    display: inline-block;
+    white-space: normal;
 }
 
-#projects .container .card .image-card {
+#projects .container .carousel .card .image-card {
     width: 13.35rem;
     display: flex;
     justify-content: center;
@@ -410,7 +432,7 @@ iconify-icon {
     border-radius: 10px;
 }
 
-#projects .container .card .card-body #name-card {
+#projects .container .carousel .card .card-body #name-card {
     font-family: "Cormorant Garamond-Medium", serif;
     color: #9cc5a1;
     font-size: 17px;
@@ -420,7 +442,7 @@ iconify-icon {
     bottom: 5px;
 }
 
-#projects .container .card .card-body #text-card {
+#projects .container .carousel .card .card-body #text-card {
     font-family: "Cormorant Garamond-Regular", serif;
     color: #dce1de;
     font-size: 13px;
@@ -430,7 +452,7 @@ iconify-icon {
     bottom: 15px;
 }
 
-#projects .container .card .card-body .btn-card {
+#projects .container .carousel .card .card-body .btn-card {
     font-family: "Cormorant Garamond-Regular", serif;
     width: 13.5rem;
     height: 2.8125rem;
@@ -441,4 +463,13 @@ iconify-icon {
     position: relative;
     right: 17px;
     bottom: 17px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
