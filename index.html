@@ -6,6 +6,7 @@
     <title>GreenTech Innovations</title>
     <link rel="stylesheet" href="file-css-dan-js/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     
@@ -72,7 +73,6 @@
         <div class="rectangle-one"></div>
         <div class="rectangle-two"></div>
     </section>
-
     <!-- About Us section -->
     
     <!-- services section -->
@@ -125,12 +125,15 @@
     <section id="projects">
         <div class="container">
             <div class="title-projects">
-                <h3 id="sentence-title-service">Our Projects</h3>
+                <h3 id="sentence-title-projects">Our Projects</h3>
             </div>
             <div class="text-projects">
                 <p id="sentence-text-projects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita <br> earum nemo accusantium exercitationem quisquam.</p>
             </div>
             <div class="carousel-wrapper">
+                <div class="button-previous">
+                    <iconify-icon id="btn-prev" icon="weui:arrow-filled"></iconify-icon>
+                </div>
                 <div class="carousel">
                     <div class="card bg-primary">
                         <img src="image/picture-1.jpg" class="image-card" alt="Project One">
@@ -143,7 +146,7 @@
                     <div class="card bg-warning">
                         <img src="image/picture-1.jpg" class="image-card" alt="Project Two">
                         <div class="card-body">
-                            <p id="name-card">Solar Power Development Project</p>
+                            <p id="name-card">Wind Turbine Project</p>
                             <p id="text-card">Solar panel installation to meet electricity demand in housing</p>
                             <button class="btn-card"><span>Explore This</span></button>
                         </div>
@@ -151,7 +154,7 @@
                     <div class="card">
                         <img src="image/picture-1.jpg" class="image-card" alt="Project Three">
                         <div class="card-body">
-                            <p id="name-card">Solar Power Development Project</p>
+                            <p id="name-card">Energy Storage System Implementation</p>
                             <p id="text-card">Solar panel installation to meet electricity demand in housing</p>
                             <button class="btn-card"><span>Explore This</span></button>
                         </div>
@@ -159,7 +162,7 @@
                     <div class="card bg-light">
                         <img src="image/picture-1.jpg" class="image-card" alt="Project Four">
                         <div class="card-body">
-                            <p id="name-card">Solar Power Development Project</p>
+                            <p id="name-card">Energy Consumption Savings</p>
                             <p id="text-card">Solar panel installation to meet electricity demand in housing</p>
                             <button class="btn-card"><span>Explore This</span></button>
                         </div>
@@ -167,7 +170,7 @@
                     <div class="card bg-secondary">
                         <img src="image/picture-1.jpg" class="image-card" alt="Project Five">
                         <div class="card-body">
-                            <p id="name-card">Solar Power Development Project</p>
+                            <p id="name-card">smart grid system development</p>
                             <p id="text-card">Solar panel installation to meet electricity demand in housing</p>
                             <button class="btn-card"><span>Explore This</span></button>
                         </div>
@@ -175,17 +178,126 @@
                     <div class="card bg-danger">
                         <img src="image/picture-1.jpg" class="image-card" alt="Project Six">
                         <div class="card-body">
-                            <p id="name-card">Solar Power Development Project</p>
+                            <p id="name-card">Energy Revitalization</p>
                             <p id="text-card">Solar panel installation to meet electricity demand in housing</p>
                             <button class="btn-card"><span>Explore This</span></button>
                         </div>
                     </div>
                 </div>
+                <div class="button-next">
+                    <iconify-icon id="btn-next" icon="weui:arrow-filled"></iconify-icon>
+                </div>
             </div>
         </div>
     </section>
     <!-- projects section -->
+
+    <!-- contact us section -->
+    <section id="contact-us">
+        <div class="container">
+            <div class="title-contact-us">
+                <h3 id="sentence-title-contact-us">Contact Us</h3>
+            </div>
+            <div class="contact">
+                <div class="group-a">
+                    <p id="sentence-text-contact-us">Lorem ipsum dolor sit amet consectetur. Praesent amet quis duis egestas mi. Dui duis nisl tellus malesuada gravida at nulla.</p>
+                    <div class="contact-via">
+                        <div class="contact-one">
+                            <iconify-icon icon="duo-icons:location"></iconify-icon>
+                            <p id="tes-kontak">1450 lorem ipsum, ultrices lorem</p>
+                        </div>
+                        <div class="contact-one">
+                            <iconify-icon icon="mdi:telephone"></iconify-icon>
+                            <p id="tes-kontak">+237 990 858 9799</p>
+                        </div>
+                        <div class="contact-one">
+                            <iconify-icon icon="mdi:instagram"></iconify-icon>
+                            <p id="tes-kontak">greentechinnovations</p>
+                        </div>
+                        <div class="contact-one">
+                            <iconify-icon icon="fa6-brands:x-twitter"></iconify-icon>
+                            <p id="tes-kontak">greentech.innovations</p>
+                        </div>
+                        <div class="contact-one">
+                            <iconify-icon icon="ic:baseline-facebook"></iconify-icon>
+                            <p id="tes-kontak">GreenTech Innovations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-b">
+                    <div class="part-form">
+                        <h5 id="title-form">Send a message via the form</h5>
+                        <form action="">
+                            <div class="inline-form">
+                                <div class="form">
+                                    <input type="text" placeholder="First name" id="first-name" onkeyup="validateFirstName()">
+                                    <span id="first-name-error"></span>
+                                </div>
+                                <div class="form">
+                                    <input type="text" placeholder="Last name" id="last-name" onkeyup="validateLastName()">
+                                    <span id="last-name-error"></span>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <input type="email" placeholder="Email" id="email" onkeyup="validateEmail()">
+                                <span id="email-error"></span>
+                            </div>
+                            <div class="form">
+                                <textarea id="message" placeholder="Fill this field with the message" onkeyup="validateMessage()"></textarea>
+                                <span id="message-error"></span>
+                            </div>
+                            <button type="submit" id="submit-error" onclick="validateForm()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us section -->
+    
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="identity">
+                <img src="image/logo.png" alt="logo">
+                <h3>GreenTech Innovations</h3>
+            </div>
+            <div class="body-footer">
+                <div class="for-contact">
+                    <p>Subscribe for more</p>
+                    <div class="form">
+                        <input type="email" placeholder="Email" name="newsletter" id="">
+                        <button type="submit">Send</button>
+                    </div>
+                    <div class="medsos">
+                        <a href="#"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+                        <a href="#"><iconify-icon icon="fa6-brands:x-twitter"></iconify-icon></a>
+                        <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                    </div>
+                </div>
+                <div class="tab-link">
+                    <div class="tab">
+                        <a href="#"><span>About Us</span></a>
+                        <a href="#"><span>Services</span></a>
+                        <a href="#"><span>Projects</span></a>
+                    </div>
+                    <div class="tab">
+                        <a href="#"><span>Article One</span></a>
+                        <a href="#"><span>Article Two</span></a>
+                        <a href="#"><span>Article Three</span></a>
+                    </div>
+                    <div class="tab">
+                        <a href="#"><span>Wind Turbine Project</span></a>
+                        <a href="#"><span>Energy Revitalization</span></a>
+                        <a href="#"><span>Smart Grid System Development</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section -->
     <script src="file-css-dan-js/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
